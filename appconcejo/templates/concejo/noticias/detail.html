@@ -5,6 +5,6 @@
             <h1>{{ noticia.title }}</h1>
             <p class="date">Publicada {{ noticia.publish }} por {{ noticia.author }}</p>
             {{ noticia.body|linebreaks }}
-            <a download="nombre_archivo" href="/media/{{ noticia.file }}">Descargar</a>
+            <a download="nombre_archivo" href="{{ noticia.file }}">Descargar</a>
         </div>
 {% endblock %}
